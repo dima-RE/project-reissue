@@ -15,7 +15,7 @@ class CreateLocales extends Migration
     {
         Schema::create('locales', function (Blueprint $table) {
             $table->string("id_local",12)->primary();
-            $table->string("nom_local",21);
+            $table->string("nom_local",50);
             $table->string("giro",100);
             $table->string("dir_local",200);
             $table->softDeletes();
